@@ -55,7 +55,10 @@ class Upload extends \Magento\Backend\App\Action
             $mediaDirectory = $this->_objectManager->get('Magento\Framework\Filesystem')
                 ->getDirectoryRead(DirectoryList::MEDIA);
 
-            $result = $this->uploader->save($mediaDirectory->getAbsolutePath('/CustomOptions'));
+            $result = $this->uploader->save($mediaDirectory->getAbsolutePath('customoptions/images'));
+            unset($result['tmp_name']);
+			unset($result['path']);
+			$data['image'] = $result['file'];
         } catch (\Exception $e) {
             echo $e->getMessage();
         }
