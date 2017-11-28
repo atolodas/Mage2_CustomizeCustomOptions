@@ -4,7 +4,7 @@
 var config = {
     map: {
         '*' : {
-            'hello' : 'Smart_CustomOptions/js/custom'
+            'custom' : 'Smart_CustomOptions/js/custom'
         }
     }
 };
