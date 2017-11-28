@@ -5,7 +5,7 @@ var config = {
     map: {
         '*' : {
             'jscolor' : 'Smart_CustomOptions/js/jscolor',
-            'uploader_option' : 'Smart_CustomOptions/js/uploader'
+            'uploader' : 'Smart_CustomOptions/js/uploader'
         }
     }
 };
